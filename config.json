@@ -28,7 +28,7 @@
         "Auto_approval": [
 	    "愿之秋灵"
 	],
-        "reminder": "-",
+        "reminder": "#",
         "slogan": "个性 全知",
         "TTS": {
             "voiceColor": "zh-CN-XiaoyiNeural",

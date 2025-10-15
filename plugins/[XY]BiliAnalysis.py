@@ -228,7 +228,7 @@ UP主：{author_name}
 💬评论：{format_count(reply_count)}
 🔗分享：{format_count(share_count)}
 ——————————
-{video_url}'''
+'''
 
             await actions.send(
                 group_id=event.group_id,
