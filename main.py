@@ -499,6 +499,8 @@ Welcome! {bot_name} was restarted successfully. Now you can send {reminder}帮�
                     await actions.send(group_id=event.group_id,message=Manager.Message(Segments.Text("6块")))
                     await actions.send(group_id=event.group_id,message=Manager.Message(Segments.Video(f"https://www.mcxclr.top/f/rboCo/Welcome.mp4")))
                     await actions.coke(group_id=event.group_id,message=Manager.Message,user_id=2137213449)
+                elif event.group_id == 1033475915:
+                    await actions.send(group_id=event.group_id,message=Manager.Message(Segments.Image(os.path.abspath("./assets/sc114.png"))))
                 break
             except:
                 traceback.print_exc()
@@ -681,19 +683,19 @@ Welcome! {bot_name} was restarted successfully. Now you can send {reminder}帮�
             else:
                 await actions.send(group_id=event.group_id, message=Manager.Message(Segments.Text(CONFUSED_WORD.format(bot_name=bot_name))))
 
-        elif "默认4" == order:
+        elif "GPT4" == order:
             EnableNetwork = "Net"
             print(f"sys: AI Mode change to ChatGPT-4")
             await actions.send(group_id=event.group_id, message=Manager.Message(Segments.Text("嗯……我好像升级了！o((>ω< ))o")))
-        elif "深度" == order:
+        elif "Deepseek" == order:
             EnableNetwork = "Ds"
             print(f"sys: AI Mode change to DeepSeek")
             await actions.send(group_id=event.group_id, message=Manager.Message(Segments.Text("服务器爆炸(⑅︎ ॣ•͈૦•͈ ॣ)꒳ᵒ꒳ᵎᵎᵎ ")))
-        elif "默认3.5" == order:
+        elif "GPT3.55" == order:
             EnableNetwork = "Normal"
             print(f"sys: AI Mode change to ChatGPT-3.5")
             await actions.send(group_id=event.group_id, message=Manager.Message(Segments.Text("切换到大模型中运行ο(=•ω＜=)ρ⌒☆")))
-        elif "读图" == order:
+        elif "Gemini" == order:
             EnableNetwork = "Pixmap"
             print(f"sys: AI Mode change to Gemini")
             await actions.send(group_id=event.group_id, message=Manager.Message(Segments.Text(f"{bot_name}打开了新视界！o(*≧▽≦)ツ")))
@@ -1233,7 +1235,7 @@ CPU占用：{str(system_info["cpu_usage"]) + "%"}
             await actions.send(group_id=event.group_id,message=Manager.Message(Segments.Image("https://pic.mcxclr.top")))
 
         elif f"ba" in user_message:
-            await actions.send(group_id=event.group_id,message=Manager.Message(Segments.Image(f"https://xxclr.ccccocccc.cc/index.php")))
+            await actions.send(group_id=event.group_id,message=Manager.Message(Segments.Image(f"https://pic.mcxclr.top")))
 
         elif "修改 " in order:
             if str(event.user_id) in ADMINS:
@@ -1669,10 +1671,10 @@ def help_message() -> str:
     return f'''如何与{bot_name}交流( •̀ ω •́ )✧
     注：对话前必须加上 {reminder} 噢！~
        {reminder}(任意问题，必填) —> {bot_name}回复
-       {reminder}读图{"（当前）" if EnableNetwork == "Pixmap" else ""} —> {bot_name}可以回复您发送的图片✅
-       {reminder}默认4{"（当前）" if EnableNetwork == "Net" else ""} —> {bot_name}更富有创造力的回复通道 🌟
-       {reminder}默认3.5{"（当前）" if EnableNetwork == "Normal" else ""} —> {bot_name}的快速回复通道🎈
-       {reminder}深度{"（当前）" if EnableNetwork == "Ds" else ""} —> 更加人性化和深度地回复问题✨{plugins_help}
+       {reminder}Gemini{"（当前）" if EnableNetwork == "Pixmap" else ""} —> {bot_name}可以回复您发送的图片✅
+       {reminder}GPT4{"（当前）" if EnableNetwork == "Net" else ""} —> {bot_name}更富有创造力的回复通道 🌟
+       {reminder}GPT3.55{"（当前）" if EnableNetwork == "Normal" else ""} —> {bot_name}的快速回复通道🎈
+       {reminder}Deepseek{"（当前）" if EnableNetwork == "Ds" else ""} —> 更加人性化和Deepseek地回复问题✨{plugins_help}
        {reminder}插件视角 —> 看看{bot_name}又收集了哪些好好用的工具🔮
        {reminder}角色扮演 —> {bot_name}切换不同的角色互动噢！~
 快来聊天吧(*≧︶≦)'''

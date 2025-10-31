@@ -7,7 +7,7 @@ from urllib.parse import quote
 from functools import wraps
 
 TRIGGHT_KEYWORD = "点歌"
-HELP_MESSAGE = f"/点歌 [歌名] —> 搜索网易云音乐歌曲\n/点歌 [ID] —> 根据ID获取歌曲"
+HELP_MESSAGE = f"#点歌 [歌名] —> 搜索网易云音乐歌曲\n#点歌 [ID] —> 根据ID获取歌曲"
 MAX_RETRIES = 3  # 最大重试次数
 RETRY_DELAY = 1  # 重试延迟(秒)
 
@@ -44,7 +44,7 @@ async def on_message(event, actions, Manager, Segments, reminder):
         if not content:
             await actions.send(
                 group_id=event.group_id,
-                message=Manager.Message(Segments.Text("唔…宝宝想听什么歌呀？要告诉星辰旅人歌名或者ID才可以哦～(。•ω•。)ﾉ\n例如：/点歌 晴天 或者 /点歌 2652820720"))
+                message=Manager.Message(Segments.Text("唔…宝宝想听什么歌呀？要告诉星辰旅人歌名或者ID才可以哦～(。•ω•。)ﾉ\n例如：#点歌 晴天 或者 #点歌 2652820720"))
             )
             return True
         

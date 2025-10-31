@@ -19,7 +19,7 @@
         "gemini_key": "AIzaSyC_lRgx5tEU3_z1EX1I-D1D9po_YhPl8Co",
         "openai_key": "sk-IZ4AapOzCsD8CHHtAc595f005c47409dAe2fB65679F6EaD2",
         "deepseek_key": "sk-6ec6deb2a12d4ae5bf7cec2296265d46",
-        "default_mode": "Pixmap",
+        "default_mode": "Ds",
         "bot_name": "星辰旅人",
         "bot_name_en": "XCLR",
         "ROOT_User": [
@@ -37,7 +37,7 @@
             "pitch": "+0Hz"
         },
         "compliment": [
-            "快哉快哉"
+            "谢谢夸奖(❁´◡`❁)*✲ﾟ*"
         ],
         "poke_rejection_phrases": [
             "呜哇——！(╥﹏╥) 戳得人家头发都翘起来啦！",

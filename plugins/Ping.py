@@ -7,7 +7,7 @@ from urllib.request import urlopen, Request
 from urllib.error import URLError, HTTPError
 
 TRIGGHT_KEYWORD = "ping "  # 关键字后需跟目标域名或IP（注意末尾空格）
-HELP_MESSAGE = "- ping <域名或IP> —> 对目标执行4次ping，并返回IP地理位置信息"
+HELP_MESSAGE = "#ping <域名或IP> —> 对目标执行4次ping，并返回IP地理位置信息"
 
 # ------- 工具函数 -------
 
