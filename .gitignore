@@ -1,1 +1,32 @@
+
+# Virtual environment
 venv/
+.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Installer logs
+pip-log.txt
+
+# Unit test / coverage
+.pytest_cache/
+.cache/
+coverage.xml
+
+# Editor dirs
+.vscode/
+.idea/
+
+# System files
+.DS_Store
+
+# Playwright / browser drivers and large binaries should not be committed
+# (if any accidentally committed, use history cleaning tools described in README or guidance)
